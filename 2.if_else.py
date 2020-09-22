@@ -44,35 +44,35 @@ else:
 # print (c)
 
 
-b = 11
+# b = 11
 
-if b > 0 and < 10:
-    print("Лампочка ВКЛ")
-else:
-    print("Лампочка ВЫКЛ")
+# if b > 0 and < 10:
+#     print("Лампочка ВКЛ")
+# else:
+#     print("Лампочка ВЫКЛ")
 
 # ****Простой калькулятор****
 
 
-# num_1 = int(input("Введите первое число: "))
-# num_2 = int(input("Введите второе число: "))
+num_1 = int(input("Введите первое число: "))
+num_2 = int(input("Введите второе число: "))
 
-# operation = input("Введите символ операции (+. -. *. /.): ")
+operation = input("Введите символ операции (+. -. *. /.): ")
 
-# if operation == "+": 
-#     res = num_1 + num_2
-# elif operation == "-":
-#     res = num_1 - num_2
-# elif operation == "*":
-#     res = num_1 * num_2
-# elif operation == "/":
-#     res = num_1 / num_2
-# else:
-#     res = "Введенный симвод некорректный!!!"
+if operation == "+": 
+    res = num_1 + num_2
+elif operation == "-":
+    res = num_1 - num_2
+elif operation == "*":
+    res = num_1 * num_2
+elif operation == "/":
+    res = num_1 / num_2
+else:
+    res = "Введенный симвод некорректный!!!"
 
 
 
-# print(f"Результат: {res}")
+print(f"Результат: {res}")
 
 
 
