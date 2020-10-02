@@ -62,4 +62,3 @@ intersect_users = users & new_users
 
 # print(diff_users)
 
-import this
