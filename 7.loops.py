@@ -69,4 +69,4 @@ num = 0
 # my_list = [num ** 2 for num in range(10)]
 my_list = [num ** 2 for num in range(10) if num > 3]
 
-print(my_list)
+# print(my_list)
