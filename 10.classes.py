@@ -88,6 +88,86 @@ class Human(Animal):
 	def info(self):
 		print(f"Я человек. Меня зовут {self.name}")
 
-john = Human("John", 2)
-john.move()
-john.info() 
+# john = Human("John", 2)
+# john.move()
+# john.info() 
+
+# **** Полиморфизм ****
+
+# поли + морф = разные формы чего-то одного (информ объекты)
+
+# 1 вид. Разные классы могут обладать методами с одним именем, но с разной функциональностью 
+
+# родительский класс
+class A:
+    def method_1(self, arg):
+        print(f'Data: {arg}')
+
+# дочерний класс у которого родительский метод переопределен 
+class A_1(A):
+    def method_1(self, a, b):
+        print(f"Data: {a + b}")
+
+# создание экземпляров классов
+a = A()
+a_1 = A_1()
+
+# вызов методов у экземпляров 
+# a.method_1(100)
+# a_1.method_1(10,20)
+
+# * 2 вид. применение "магических" методов (методов перезагрузки операторов)
+
+# метод, который позволяет из экземпляра (объекта) класса "делать" функцию 
+class CustomSum:
+    def __init__(self, param):
+        self.coeff = param
+
+    # маг-метод представляющий поведение обычной функции
+    def __call__(self, a, b):
+        res = (a + b) * self.coeff
+        print(f"Result: {res}")
+
+    # маг-метод
+    def __str__(self):
+        return f"Custom Summator. Coeff: {self.coeff}"
+
+sum_1 = CustomSum(0.5)
+sum_2 = CustomSum(1.53)
+
+# эффект нашего "магического" метода 
+# sum_1(2, 3)
+# sum_2(2, 3) 
+
+# print(sum_1)
+
+# **** Инкапсуляция ****
+# инкапсуляция - скрытие атрибутов и/или методов
+
+
+
+
+
+class B:
+    def __init__(self, arg):
+        # не строго инкапсулированный атрибут
+        self._attr = arg
+
+        # "строго" инкапсулированный атрибут
+        self._attr2 = 100
+
+    # не строго инкапсулированный атрибут
+    def _method(self):
+        print("Hello!")
+
+     # "строго" инкапсулированный атрибут
+    def _method_2(self):
+        print("World!")
+
+b = B(100)
+# print(b._attr)
+# b._method()
+
+# print(b._attr)
+print(b._B__attr2)
+# b.__method_2()
