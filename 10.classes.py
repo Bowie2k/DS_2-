@@ -171,3 +171,22 @@ b = B(100)
 # print(b._attr)
 print(b._B__attr2)
 # b.__method_2()
+# b.method_3()
+
+
+# **** Композиция (Агрегация) ****
+
+# использование экземпляров одних классов внутри других классов
+
+class C:
+    def __call__(self, a):
+        return a ** 2
+
+class D:
+    def method(self, x):
+        c = C() # создается объект класса D
+        return c(x) + x # используется в качестве функции 
+        print(res)
+
+d = D()
+# d.method(10)
