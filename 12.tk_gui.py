@@ -22,7 +22,7 @@ def hashing():
     pwd_hash.set(hex_str)
 
     # print(hex_str)
-    # print(type(byte_str))
+    # print(type(byte_str)) 6c2b38c2
 
     # запись в файл
 
