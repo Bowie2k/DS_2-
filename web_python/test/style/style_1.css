@@ -1,0 +1,46 @@
+/* селектор по тегу */
+body{
+	/* свойство "цвет фона" */
+	background-color: rgb(185, 163, 135);
+}
+
+/* обращение к нескольким тегам 
+и настройка одного свойства */
+header, div, footer{
+	/* свойство "граница" */
+	border: 2px solid red;
+}
+
+div{
+	background-color: white;
+	color: seagreen;
+}
+
+/* селектор по классу */
+.content{
+	color:slateblue;
+}
+
+.p1{
+	color: tomato;
+}
+
+.p2{
+	color: yellow;
+}
+
+.block_2{
+	/* основные свойства текста */
+	font-size: 20px;
+	letter-spacing: 5px;
+	font-weight: inherit;
+	text-align: left;
+	text-shadow: lawngreen;
+	text-transform: capitalize;
+	
+	/* настройка отступов */
+	/* внешние отступы */
+	margin: 5px 10px 15px 20px;
+	/* внутренние отступы */
+	padding: 10px;
+}
