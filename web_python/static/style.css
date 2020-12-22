@@ -1,3 +1,33 @@
 header, div.main, footer {
 	border: 2px solid black;
 }
+
+/* header */
+
+header {
+	background-color: #313131;
+	height: 100px;
+	position: relative;
+}
+.header__menu {
+	height: 100%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.header__menu a {
+	font-family: 'Ubuntu', sans-serif;
+	color: #b8b8b8;
+}
+
+/* content */
+.main {
+	background-color: #b8b8b8;
+	height: 800px;
+}
+
+/* footer */
+footer {
+	background-color: #313131;
+	height: 100px;
+}
